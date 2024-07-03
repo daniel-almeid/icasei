@@ -1,0 +1,14 @@
+{
+  "name": "bff",
+  "version": "1.0.0",
+  "description": "Backend for Frontend",
+  "main": "bff.js",
+  "scripts": {
+    "start": "node bff.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "googleapis": "^88.2.0"
+  }
+}

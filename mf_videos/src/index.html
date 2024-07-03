@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>MF_VÍDEOS</title>
+</head>
+<body>
+  <div class="sidebar">
+    <h2>MF_DRAWER</h2>
+    <ul>
+      <li><a href="#" id="videosLink">VÍDEOS</a></li>
+      <li>
+        <a href="#" id="favoritesLink">FAVORITOS <span class="favorites-count">0</span></a>
+      </li>
+    </ul>
+  </div>
+  <main>
+    <section id="videosSection">
+      <h1>MF_VÍDEOS</h1>
+      <form id="searchForm">
+        <input type="text" id="searchInput" placeholder="Digite o termo de busca">
+        <button type="submit">Buscar</button>
+      </form>
+      <div id="videosContainer"></div>
+    </section>
+    <section id="favoritesSection" class="hidden">
+      <h1>FAVORITOS (<span id="favoritesCount">0</span>)</h1>
+      <div id="favoritesContainer"></div>
+    </section>
+  </main>
+
+  <!-- Modal para reprodução de vídeo -->
+  <div id="videoModal" class="modal">
+    <div class="modal-content">
+      <span id="closeModal" class="close">&times;</span>
+      <iframe id="videoPlayer" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
